@@ -1,0 +1,112 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Super Hot Air Fryer's</title>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="css/contact.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css2?family=Francois+One&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="images/Air Fryer Banner.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/Designer.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="images/Air Fryer Logo.png">
+  <link rel="icon" sizes="192x192" href="images/Air Fryer Logo.png">
+</head>
+<body>
+<div id="container">
+
+    <!-- Header -->
+    <header>
+
+
+	<!-- Mobile Nav -->
+		<nav class="mobile-nav">
+			<div id="menu-links">
+        <a href="index.html"><img src="images/Air Fryer Banner.png" id="logo-link" alt="air fryer" height="250px" width="100%"></a>
+				<a href="index.html">Home</a>
+				<a href="about.html">About</a>
+				<a href="team.html">Our Team</a>
+				<a href="specials.html">Specials</a>
+				<a href="Training.html">Training</a>
+				<a href="media.html">Media</a>
+				<a href="faqs.html">FAQs</a>
+				<a href="contact.html">Contact Us</a>
+			</div>
+			<a class="menu-icon" onclick="hamburger()">
+				<div>&#9776;</div>
+			</a>
+		</nav>
+	  
+	  <!-- Tablet, Desktop Nav -->
+	  <nav class="tablet-desktop">
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="about.html">About</a></li>
+			<li><a href="team.html">Our Team</a></li>
+			<li><a href="specials.html">Specials</a></li>
+			<li><a href="Training.html">Training</a></li>
+			<li><a href="media.html">Media</a></li>
+			<li><a href="faqs.html">FAQs</a></li>
+			<li><a href="contact.html">Contact Us</a></li>
+		</ul>
+	  </nav>
+      
+      <h1>Contact Us</h1>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <h2>Get in Touch</h2>
+        <ol>
+            <li>Fill out all required fields.</li>
+            <li>Choose your preferred contact method.</li>
+            <li>Submit your request and we’ll respond promptly.</li>
+        </ol>
+
+        #
+            <fieldset>
+                <legend>Contact Information</legend>
+
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required autofocus size="30"><br><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+
+                <label for="date">Preferred Contact Date:</label>
+                <input type="date" id="date" name="date"><br><br>
+
+                <label>Contact Method:</label>
+                <input type="radio" name="contact-method" value="email" checked>Email
+                <input type="radio" name="contact-method" value="phone">Phone<br><br>
+
+                <label>Subscribe to Newsletter:</label>
+                <input type="checkbox" name="subscribe" value="yes"> Yes<br><br>
+
+                <label for="product">Select Product:</label>
+                <select id="product" name="product">
+                    <option value="air-fryer-pro">Air Fryer Pro</option>
+                    <option value="air-fryer-max">Air Fryer Max</option>
+                    <option value="air-fryer-lite">Air Fryer Lite</option>
+                </select><br><br>
+
+                <label for="message">Your Message:</label><br>
+                <textarea id="message" name="message" rows="5" cols="40" placeholder="Type your message here..."></textarea><br><br>
+
+                <button type="submit">Submit Request</button>
+                <button type="reset">Reset Form</button>
+            </fieldset>
+        </form>
+    </main>
+
+    <!-- Footer -->
+	  <!-- Use the footer are to add webpage footer content -->
+	  <footer>
+		<p>&copy; Copyright 2021. All Rights Reserved.<br>Request Information</br></p>
+		<p>Jacob Munday c0627370</p>
+
+		<script src="scripts/script.js"></script>
+		<p><a href="mailto:superhotairfryers@fry.net">superhotairfryers@fry.net</a></p>
+	  </footer>
+</div>
+</body>
