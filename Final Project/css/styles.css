@@ -1,0 +1,225 @@
+
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+#logo-link {
+    width: 10%;
+    height: 100%;
+    float: left;
+}
+
+/* 1. Body and default font */
+body {
+    background-color: #111;
+    color: #fff; 
+    font-family: 'Roboto', Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* 2. Container */
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+#container {
+    margin: 0 auto;
+}
+
+/* 3. Header */
+header {
+    background-color: #b30000; /* Deep red */
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+    text-align: center;
+    padding: 20px;
+    color: #fff;
+}
+
+
+
+/* 4. Navigation */
+nav {
+    background-color: #222;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    text-align: center;
+    display:inline-block;
+    font-size: 2em;
+}
+
+nav ul {
+	list-style-type: none;
+	text-align: center;
+}
+
+nav li {
+	display: block;
+	border-top: 1px solid #e5e9fc;
+	font-size: 1em;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav li a {
+	display: block;
+	color: #fff;
+	text-align: center;
+	padding: 0.5em 1em;
+	text-decoration: none;
+}
+
+nav a:hover {
+    color: #b30000;
+}
+
+/* 5. Main content */
+main {
+    display: block;
+    background-color: #1a1a1a;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.4);
+    font-size: 16px;
+}
+
+/* 6. Headings */
+h1 {
+    font-size: 2.5em;
+    color: #ffffff; 
+}
+
+h2 {
+    font-size: 2em;
+    color: #fff;
+}
+
+h3 {
+    font-size: 1.5em;
+    color: #ccc;
+}
+
+/* 7. Lists */
+ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+/* 8. Footer */
+footer {
+    font-size: 0.8em;
+    text-align: center;
+    margin-top: 20px;
+    color: #999;
+    padding: 10px;
+}
+
+/* 9. Buttons (extra creative style) */
+button {
+    background-color: #b30000;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ff0000; /* Bright red on hover */
+}
+
+/* 10. Links inside main content */
+main a {
+    color: #ff4d4d;
+    text-decoration: underline;
+}
+
+main a:hover {
+    color: #fff;
+}
+
+
+/* Default styles (desktop-first) */
+body {
+    font-family: 'Roboto Slab', serif;
+    background-color: #111;
+    color: #fff;
+    margin: 0;
+}
+
+main {
+    padding: 20px;
+}
+
+/* Hide all viewport divs initially */
+.mobile-view, .tablet-view, .desktop-view {
+    display: none;
+}
+
+/* Desktop view */
+@media screen and (min-width: 1025px) {
+    .desktop-view { display: block; }
+    .tablet-desktop {
+        display: none;
+    }
+
+    .menu-icon {
+        display: none;
+    }
+}
+
+/* Tablet view */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .tablet-view { display: block; }
+    .tablet-desktop {
+        display: none;
+    }
+
+        .menu-icon {
+        display: none;
+    }
+}
+
+/* Mobile view */
+@media screen and (max-width: 767px) {
+    .mobile-view { display: block; }
+    .mobile-nav {
+        display: none;
+    }
+
+}
+
+/* Navigation pseudo-classes */
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+}
+
+nav a:hover {
+    color: #b30000;
+    text-decoration: underline;
+}
+
